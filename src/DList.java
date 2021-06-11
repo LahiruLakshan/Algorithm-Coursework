@@ -44,4 +44,16 @@ public class DList {
         first= newListNode;
         return first;
     }
+
+    public static void printList(ListNode first)
+    {
+        if (first == null)
+            System.out.println("Doubly Linked list empty");
+
+        while (first != null)
+        {
+            System.out.print(first.data+" ") ;
+            first = first.next;
+        }
+    }
 }
