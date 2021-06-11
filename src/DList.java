@@ -56,4 +56,23 @@ public class DList {
             first = first.next;
         }
     }
+
+    public static void main(String[] args) {
+        first=push( 8);
+        first=push( 7);
+        first=push( 4);
+        first=push( 4);
+        first=push( 4);
+        first=push( 3);
+        first=push( 1);
+        first=push( 1);
+
+
+        System.out.println("Original Doubly LinkedList");
+        printList(first);
+
+        removeDuplicates();
+        System.out.println("\nDoubly linked list after removing duplicates:");
+        printList(first);
+    }
 }
