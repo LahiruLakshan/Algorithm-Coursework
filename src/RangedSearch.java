@@ -12,6 +12,10 @@ public class RangedSearch {
         }
         return -1;
     }
-
+    public static void main(String[] args) {
+        int [] A = new int[]{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 30,33};
+        int range = findInRange(A, 13, 19);
+        System.out.println(range);
+    }
 
 }
