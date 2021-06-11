@@ -28,4 +28,20 @@ public class DList {
             n = n. next ;
         }
     }
+
+    /* Function to insert a node at the beginning
+	of the Doubly Linked List */
+    public static ListNode push(int data)
+    {
+        ListNode newListNode =	new ListNode(data);
+
+        newListNode.previous =null;
+        newListNode.next =first;
+        if(first!=null)
+        {
+            first.previous = newListNode;
+        }
+        first= newListNode;
+        return first;
+    }
 }
